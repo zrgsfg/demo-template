@@ -7,6 +7,10 @@ from rich.console import Console
 
 
 def moyenne(valeurs):
+    S=0
+    for k in range(len(valeurs)):
+        S=S+ valeurs[k]
+    return float(S/len(valeurs))
     # docstrings en markdown
     """
     # Calcule la moyenne des valeurs.
